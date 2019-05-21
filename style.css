@@ -16,21 +16,27 @@ ul.navbar-nav {
 }
 
 .skills-container {
+    /* background-color: rgb(255, 255, 255);
+    height: 100%;
+    border: 1px rgb(0,0,0,.14);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.06), 0 4px 5px 0 rgba(0,0,0,.06), 0 1px 10px 0 rgba(0,0,0,.08); */
+}
+
+.skills-list-container {
+    /* background-color: rgb(255, 255, 255);
+    height: 100%;
+    border: 1px rgb(0,0,0,.14);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.06), 0 4px 5px 0 rgba(0,0,0,.06), 0 1px 10px 0 rgba(0,0,0,.08); */
+}
+
+.skill-list-container {
     background-color: rgb(255, 255, 255);
     height: 100%;
     border: 1px rgb(0,0,0,.14);
     border-radius: 12px;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.06), 0 4px 5px 0 rgba(0,0,0,.06), 0 1px 10px 0 rgba(0,0,0,.08);
-}
-
-.skills-list-container {
-
-}
-
-.skill-list-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
