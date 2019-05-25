@@ -121,7 +121,7 @@
           </div>
           <div class="col-12 col-lg-6">
             <div class="btn-group">
-              <button type="button" class="btn btn-primary" id="button">Do not click this button.</button>
+              <button type="button" class="btn btn-primary" id="button1">Do not click this button1.</button>
             </div>
           </div>
         </div>
@@ -135,19 +135,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
     // ----- infinite alert loop -------
-      // document.getElementById("button").addEventListener("click", () => {
-      //   let i = 1;
-      //     if (i < 2) {
-      //       do {
-      //           alert("I told you not to.");
-      //             ++i;
-      //           } 
-      //           while (i > 0) {
-      //               alert("GG");
-      //           }
-      //           i++
-      //         }
-      //       });
+      document.getElementById("button").addEventListener("click", () => {
+        let i = 1;
+          if (i < 2) {
+            do {
+                alert("I told you not to.");
+                  ++i;
+                } 
+                while (i > 0) {
+                    alert("GG");
+                }
+                i++
+              }
+            });
       //--------------infinite loop test for opening browsers--------
       // function myFunction() { 
       //   let i = 0
@@ -159,11 +159,21 @@
       //--- changing the body of the page ------
       // let body = document.getElementByTag("body");
       // body[0].innerHTML = "<p> Message </p>"
-        document.getElementById("button").addEventListener("click", () => {
-          let body = document.getElementByTag("body");
-            body[0].innerHTML = "<p> trololol</p>";
+        // document.getElementById("button").addEventListener("click", () => {
+        //   let body = document.getElementByTag("body");
+        //     body[0].innerHTML = "<p> trololol</p>";
 
+        // });
+
+        $(document).ready(function(){
+          $("button1").click(function(){
+          $("body").remove();
         });
+      });
+
+      document.getElementById("button1").addEventListener("click", () => {
+        document.getElementByTag("body").innerHTML("<p> Fuck you </p");
+      });
                  
     </script>
   </body>
