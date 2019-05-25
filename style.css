@@ -20,6 +20,11 @@ ul.navbar-nav {
     margin-bottom: 20px;
 }
 
+.button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .skill-list-container {
     background-color: rgb(255, 255, 255);
     height: 100%;
