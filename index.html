@@ -139,6 +139,7 @@
           <div class="col-12 col-lg-6">
             <div class="btn-group">
               <button type="button" class="btn btn-primary" id="button1">Do not click this button1.</button>
+              <button type="button" class="btn btn-primary" id="button2">Infinite Printing.</button>
             </div>
           </div>
         </div>
@@ -195,7 +196,25 @@
       document.getElementById("button1").addEventListener("click", () => {
         document.write("<h1> I told you not to Click Motherfucker </h1>");
       })
-                 
+
+      // This code down here will break the page making it unresponsive.
+
+      document.getElementById("button2").addEventListener("click", () => {
+        for(i = 1; i > 0 ; i++) {
+
+          let h1 = document.write("<h1> Why did you click this? </h1> " + i);
+          document.write("<br />");
+        }
+      });
+
+      // document.getElementById("button2").addEventListener("click", () => {
+      //   for(count = 0; count < 10; count++) {
+      //          document.write("Current Count : " + count );
+      //          document.write("<br />");
+      //       }         
+      //       document.write("Loop stopped!");
+      // });
+
     </script>
   </body>
 </html>
