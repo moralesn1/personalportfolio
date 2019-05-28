@@ -197,8 +197,10 @@
         document.write("<h1> I told you not to Click Motherfucker </h1>");
       })
 
-      // This code down here will break the page making it unresponsive.
+      /* This code down here will break the page making it unresponsive.
 
+        It will alert them with an alert and then cause the page to crash.
+      */
       document.getElementById("button2").addEventListener("click", () => {
         alert("Congrats. You broke the webpage")
         for(i = 1; i > 0 ; i++) {
